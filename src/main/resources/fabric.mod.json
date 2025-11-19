@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "enhancedblockentities",
+  "version": "${version}",
+
+  "name": "Enhanced Block Entities",
+  "description": "Optimize and customize block entity rendering with a more modern approach.",
+  "authors": [
+    "FoundationGames"
+  ],
+  "contact": {
+    "homepage": "https://github.com/FoundationGames/EnhancedBlockEntities",
+    "issues": "https://github.com/FoundationGames/EnhancedBlockEntities/issues",
+    "sources": "https://github.com/FoundationGames/EnhancedBlockEntities"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/enhancedblockentities/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "foundationgames.enhancedblockentities.EnhancedBlockEntities"
+    ],
+    "modmenu": [
+      "foundationgames.enhancedblockentities.config.gui.EBEModMenuPlugin"
+    ]
+  },
+  "mixins": [
+    "enhancedblockentities.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "fabric-api": ">=0.114.1",
+    "minecraft": ">=1.21.4 <1.21.11"
+  },
+  "breaks": {
+    "optifabric": "*"
+  },
+
+  "accessWidener": "enhancedblockentities.accesswidener",
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/7Aw3y4RtY9"
+      }
+    }
+  }
+}
